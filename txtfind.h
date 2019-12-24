@@ -1,8 +1,8 @@
 int Getline (char s[]);
 int getword (char w[]);
-int substring(char* str1, char* str2);
+int substring(char *str1, char *str2);
 int similar(char *s, char *t, int n);
-void print_similar_words(char* str);
-void print_lines(char* str);
-int strLen(char* str);
-int strComp(char* str1, char* str2);
+void print_similar_words(char *str);
+void print_lines(char *str);
+int strLen(char *str);
+int strComp(char *str1, char *str2);

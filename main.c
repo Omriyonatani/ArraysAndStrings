@@ -1,19 +1,22 @@
 #include "isort.h"
 #include <stdio.h>
-#define LEN 50
+#define LENGTH 50
 
-int main () {
-int a[LEN];
-    int i, j;
-
-    for (i=0; i < LEN; i++) {
-      printf("Enter number: ");
-      scanf("%d",(a+i));
+int main()
+{
+    int arr[LENGTH];
+    for (int i = 0; i<LENGTH ; i++){
+        printf("Enter a number:\n");
+        scanf("%d",(arr+i));
     }
-    insertion_sort(a,LEN);
-    for (j=0; j < LEN; j++) {
-      printf("%d",a[j]);
-      printf(",");
-    }  
+
+    insertion_sort(arr,LENGTH);
+
+    for (int j = 0; j<LENGTH ; j++){
+      printf("%d",arr[j]);
+      if (j < LENGTH-1) {
+        printf(",");
+      }
+    }
     return 0;
 }
